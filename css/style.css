@@ -1,0 +1,215 @@
+body{
+    font-family: 'Noto Serif', 'Noto Serif KR', serif;
+    color: #5b5b5b;
+}
+.hidden {
+    display: none;
+}
+main{ 
+    background: url(../img/1.jpg) no-repeat 100% 100% / cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.mainContent{
+    display: flex;
+    background: rgba(255, 255, 255, .55);
+    width: 90%;
+    height: 90%;
+    margin: auto 0;
+    border-radius: 1rem;
+    align-items: center;
+    flex-direction: column;
+}
+#login-box{
+    display: block;
+    width: 89%;
+    margin: auto 0;
+    text-align: right;
+}
+#login-box input[type="text"]{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #5b5b5b ;
+    color: #5b5b5b;
+    width: 15%;
+    text-align: center;
+}
+#login-box input[type="submit"]{
+
+    border: none;
+    background: #918f8b;
+    color: #fff;
+    border-radius: 4px;
+    cursor:pointer;
+}
+#login-form{
+    margin-top: 0.8rem;
+}
+#greeting{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 100;
+    margin-right: 0.4rem;
+}
+
+.white-box{ 
+    width: 95%;
+    height: 85%;
+    display: flex;
+    -moz-justify-content: space-evenly;	
+    -ms-justify-content: space-around;		
+    -o-justify-content: space-evenly;		
+    -webkit-justify-content: space-evenly;	
+    flex-direction: row;
+}
+.white-box [class*='-content']{
+    display: flex;
+    margin: auto 0;
+    border-radius: 1rem;
+    width: 39vw;
+    height: 100%;
+}
+.left-content{
+    flex-direction: column;
+    background:none;
+}
+.left-content [class*='left-']{
+    display: flex;
+    width: 100%;
+    background: rgba(255, 255, 255, .55);
+    border-radius: 1rem;
+}
+.left-top{
+    height: 40%;
+    margin-bottom: 2.5vw;
+    flex-direction: column;
+}
+.dday{
+    display: block;
+    margin: auto;
+    font-size: 3rem;
+}
+.left-bottom{
+    opacity: .9;
+    height: 60%;
+    color: #fff;
+    text-align: center;
+    display: block;
+}
+.left-bottom #quote{
+    width: 100%;
+    margin: auto 1rem;
+}
+.left-bottom #quote span{
+    display: block;
+}
+.left-bottom #quote span:first-child{
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+.right-content{
+    background: rgba(255, 255, 255, .55);
+    flex-direction: column;
+}
+
+
+.title-box{
+    background: url(../img/title_bg.png) no-repeat 100% 100%/ contain;
+    width: 13vw;
+    height: 5.5vh;
+    display: block;
+    margin: 2rem auto 0;
+    font-style: italic;
+}
+h2.title{
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.6rem;
+    padding-top: .7rem;
+}
+.todo-box{
+    text-align: center;
+    margin-top: 1rem;
+}
+#todo-form{
+    margin-bottom: 1.5rem;
+}
+#todo-form input[type="text"]{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #5b5b5b ;
+    color: #5b5b5b;
+    width: 75%;
+    text-align: center;
+}
+#todo-form input[type="submit"]{
+    border: none;
+    background: #918f8b;
+    color: #fff;
+    border-radius: 4px;
+    cursor:pointer;
+}
+input:focus {outline:none;}
+
+#todo-list li{
+    padding-bottom:.7rem ;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+#todo-list li button{
+    border: none;
+    background: none;
+    cursor:pointer;
+    float: right;
+}
+.weter-clock-box{
+    display: block;
+    width: 89%;
+    margin: auto 0;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: right;
+}
+.weter-clock-box #weather{
+    /* display: inline; */
+    font-weight: 600;
+    margin-bottom: .4rem;
+}
+.weter-clock-box #clock{
+    /* display: inline; */
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+@media all and (max-width: 550px){
+    .title-box {
+        width: 45vw;
+    }
+    h2.title{
+        font-size: 1.6rem;
+        padding-top: 0.7rem;
+    }
+	.white-box{
+        flex-direction: column-reverse;
+    }
+    .white-box [class*='-content']{
+        width: 100%;
+    }
+    .left-top {
+        margin-top: 2.5vw;
+        padding-bottom: 2rem;
+    }
+    .dday{
+        margin-top: 1rem;
+    }
+    
+}
+@media all and (max-width: 450px){
+    h2.title{
+        font-size: 1.2rem;
+        padding-top: 0.9rem;
+    }
+}
